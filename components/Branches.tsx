@@ -22,9 +22,9 @@ const Branches: React.FC<BranchesProps> = ({ onRegister }) => {
         y: 30,
         opacity: 0,
         duration: 1,
-        scrollTrigger: { 
-          trigger: sectionRef.current, 
-          start: "top 85%" 
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 85%"
         }
       });
 
@@ -33,21 +33,21 @@ const Branches: React.FC<BranchesProps> = ({ onRegister }) => {
         opacity: 0,
         duration: 0.8,
         delay: 0.2,
-        scrollTrigger: { 
-          trigger: sectionRef.current, 
-          start: "top 85%" 
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 85%"
         }
       });
-      
+
       gsap.from(".branch-card", {
         scale: 0.98,
         opacity: 0,
         y: 30,
         duration: 0.8,
         delay: 0.4,
-        scrollTrigger: { 
-          trigger: ".branch-card", 
-          start: "top 85%" 
+        scrollTrigger: {
+          trigger: ".branch-card",
+          start: "top 85%"
         }
       });
     }, sectionRef);
@@ -57,7 +57,7 @@ const Branches: React.FC<BranchesProps> = ({ onRegister }) => {
   return (
     <section id="branches" ref={sectionRef} className="py-24 md:py-32 bg-primary-black border-t border-white/5 relative">
       <div className="max-w-7xl mx-auto px-6">
-        
+
         {/* Section Header */}
         <div className="branch-header text-center mb-10 md:mb-12">
           <span className="text-primary-red font-black uppercase tracking-[0.4em] text-[10px] block mb-4">Membership Plans</span>
@@ -72,11 +72,10 @@ const Branches: React.FC<BranchesProps> = ({ onRegister }) => {
             <button
               key={branch.id}
               onClick={() => setActiveTab(branch.id as Branch)}
-              className={`px-8 md:px-12 py-4 md:py-5 font-inter font-black text-[10px] md:text-xs uppercase tracking-[0.2em] transition-all duration-300 rounded-none border ${
-                activeTab === branch.id 
-                  ? 'bg-primary-red border-primary-red text-white shadow-[0_10px_40px_rgba(255,60,60,0.3)]' 
+              className={`px-8 md:px-12 py-4 md:py-5 font-inter font-black text-[10px] md:text-xs uppercase tracking-[0.2em] transition-all duration-300 rounded-none border ${activeTab === branch.id
+                  ? 'bg-primary-red border-primary-red text-white shadow-[0_10px_40px_rgba(255,60,60,0.3)]'
                   : 'bg-white/5 border-white/10 text-white/40 hover:text-white hover:border-white/30 hover:bg-white/10'
-              }`}
+                }`}
             >
               {branch.name}
             </button>
@@ -87,7 +86,7 @@ const Branches: React.FC<BranchesProps> = ({ onRegister }) => {
         <div className="max-w-4xl mx-auto">
           <div className="branch-card bg-white/[0.03] backdrop-blur-[50px] border border-white/10 rounded-none overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.6)]">
             <div className="grid md:grid-cols-2">
-              
+
               {/* Left Column: Schedule */}
               <div className="p-8 md:p-12 border-b md:border-b-0 md:border-r border-white/10 relative">
                 <div className="flex items-center space-x-5 mb-10">
@@ -154,7 +153,7 @@ const Branches: React.FC<BranchesProps> = ({ onRegister }) => {
                       {currentBranch.address}
                     </p>
                   </div>
-                  <button 
+                  <button
                     onClick={() => onRegister(currentBranch.id as Branch)}
                     className="red-button w-full py-5 md:py-6 font-inter font-black text-xs uppercase tracking-[0.3em] rounded-none shadow-[0_15px_45px_rgba(255,60,60,0.2)] active:scale-95"
                   >
@@ -167,7 +166,7 @@ const Branches: React.FC<BranchesProps> = ({ onRegister }) => {
           </div>
         </div>
       </div>
-      
+
       {/* Decorative Blur Elements */}
       <div className="absolute top-1/2 left-0 w-64 h-64 bg-primary-red/5 blur-[100px] -z-10"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary-red/5 blur-[120px] -z-10"></div>

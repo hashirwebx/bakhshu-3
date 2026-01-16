@@ -56,20 +56,20 @@ const Benefits: React.FC = () => {
   }, []);
 
   return (
-    <section id="benefits" ref={sectionRef} className="py-32 bg-primary-black border-t border-white/5 overflow-hidden">
+    <section id="benefits" ref={sectionRef} className="py-32 bg-gray-200 border-t border-gray-200 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* New Section Headline Header Added Here */}
         <div className="benefits-header mb-20 relative">
-          <h2 className="text-6xl md:text-[10rem] font-bebas text-white/5 absolute -top-16 md:-top-24 left-0 select-none tracking-tighter uppercase leading-none pointer-events-none">Discipline</h2>
-          <h3 className="text-4xl md:text-7xl font-bebas text-white tracking-widest uppercase relative z-10 leading-none">Benefits of  <span className="text-primary-red">Taekwondo</span></h3>
+          <h2 className="text-6xl md:text-[10rem] font-bebas text-black/5 absolute -top-16 md:-top-24 left-0 select-none tracking-tighter uppercase leading-none pointer-events-none">Discipline</h2>
+          <h3 className="text-4xl md:text-7xl font-bebas text-black tracking-widest uppercase relative z-10 leading-none">Benefits of  <span className="text-primary-red">Taekwondo</span></h3>
           <div className="w-32 h-1 bg-primary-red mt-8"></div>
         </div>
 
         <div className="grid lg:grid-cols-12 gap-20 items-center">
 
           <div className="lg:col-span-5 benefits-visual relative">
-            <div className="relative z-10 rounded-none overflow-hidden border border-white/10 shadow-2xl group">
+            <div className="relative z-10 rounded-none overflow-hidden border border-gray-200 shadow-2xl group">
               <img
                 src="https://scontent.fxjm2-1.fna.fbcdn.net/v/t1.6435-9/55795209_2396752590344695_7584201530727727104_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=iwsIfFfsKX4Q7kNvwFwsTfz&_nc_oc=Admm4hHJBwXB90QeVSywkbCyKHAOe1XGeh2P_aSgxpqXy4wryFNspgQ8XzhNH2PWlRk&_nc_zt=23&_nc_ht=scontent.fxjm2-1.fna&_nc_gid=hTcEBYZ2RvIrguz80X3cJw&oh=00_AfoI5DmWS3_MICvRiz9ZNtKzfszMWWGocKsjG5askkJqHw&oe=698D73F5"
                 alt="Empowering Young Minds"
@@ -78,9 +78,9 @@ const Benefits: React.FC = () => {
 
               <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-primary-red/10 blur-[120px] -z-10 rounded-none"></div>
 
-              <div className="absolute bottom-8 left-8 p-8 bg-white/[0.05] backdrop-blur-2xl border border-white/10 text-white rounded-none shadow-2xl">
+              <div className="absolute bottom-8 left-8 p-8 bg-white/90 backdrop-blur-2xl border border-white/20 text-black rounded-none shadow-2xl">
                 <p className="text-3xl font-bold leading-tight">Empowering <br />Young Minds</p>
-                <p className="text-[10px] font-black uppercase tracking-widest mt-2 opacity-80">Since 2010</p>
+                <p className="text-[10px] font-black uppercase tracking-widest mt-2 opacity-80 text-primary-red">Since 2010</p>
               </div>
             </div>
             <div className="absolute -top-10 -left-10 w-full h-full border-2 border-primary-red/20 rounded-none -z-10 translate-x-4 translate-y-4"></div>
@@ -88,12 +88,12 @@ const Benefits: React.FC = () => {
 
           <div className="lg:col-span-7">
             <div className="mb-12">
-              <h2 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight leading-none">
+              <h2 className="text-4xl md:text-6xl font-bold text-black mb-4 tracking-tight leading-none">
                 Benefits of Taekwondo for Kids
               </h2>
               <p className="text-primary-red font-black uppercase tracking-[0.4em] text-[10px] mb-8 block">More Than Just a Sport</p>
 
-              <p className="text-text-gray text-xl font-medium leading-relaxed max-w-xl">
+              <p className="text-gray-600 text-xl font-medium leading-relaxed max-w-xl">
                 Taekwondo helps children develop life skills that go far beyond the mat:
               </p>
             </div>
@@ -106,11 +106,11 @@ const Benefits: React.FC = () => {
                 { text: <span>Teaches <strong>self-control and emotional balance</strong></span>, icon: <Brain /> },
                 { text: <span>Promotes <strong>respect for parents, teachers, and peers</strong></span>, icon: <Users /> }
               ].map((benefit, idx) => (
-                <div key={idx} className="benefit-item group flex items-center space-x-6 p-6 rounded-none transition-all duration-300 bg-white/[0.04] backdrop-blur-2xl border border-white/5 hover:border-primary-red/30 hover:bg-white/[0.08]">
-                  <div className="w-12 h-12 shrink-0 bg-white/5 text-primary-red flex items-center justify-center rounded-none group-hover:bg-primary-red group-hover:text-white transition-all duration-500 shadow-inner">
+                <div key={idx} className="benefit-item group flex items-center space-x-6 p-6 rounded-none transition-all duration-300 bg-white border border-gray-200 shadow-sm hover:border-primary-red/30 hover:bg-gray-50 hover:shadow-md">
+                  <div className="w-12 h-12 shrink-0 bg-gray-100 text-primary-red flex items-center justify-center rounded-none group-hover:bg-primary-red group-hover:text-white transition-all duration-500 shadow-inner">
                     {React.cloneElement(benefit.icon as React.ReactElement<any>, { size: 20, strokeWidth: 2 })}
                   </div>
-                  <p className="text-white text-lg font-normal tracking-wide">
+                  <p className="text-black text-lg font-normal tracking-wide">
                     {benefit.text}
                   </p>
                 </div>

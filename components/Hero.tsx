@@ -176,7 +176,7 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
 
 
   return (
-    <section id="hero" ref={containerRef} className="relative h-[120dvh] overflow-hidden select-none font-inter pt-[100px]">
+    <section id="hero" ref={containerRef} className="relative h-[110dvh] overflow-hidden select-none font-inter pt-[80px]">
       <div ref={slidesRef} className="absolute inset-0 w-full h-full">
         {HERO_SLIDES.map((slide, idx) => (
           <div

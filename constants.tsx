@@ -157,7 +157,7 @@ export const HERO_SLIDES = [
     description: "Led by a former Pakistan National Taekwondo Player with over a decade of excellence.",
     primaryBtn: "Book a Trial Session",
     secondaryBtn: "Meet Our Coaches",
-    image: "https://ik.imagekit.io/BakhshuTaekwondo/hero%20section%20taewondo%20images/Gemini_Generated_Image_ekxvinekxvinekxv.png?updatedAt=1768225451654",
+    image: "https://ik.imagekit.io/BakhshuTaekwondo/Gemini_Generated_Image_ce3v3oce3v3oce3v.png",
     aiPrompt: "A high-ranking Taekwondo master in a formal black-trim uniform performing a powerful jumping side kick, mid-air, dynamic motion blur, elite professional stadium background."
   },
   {
@@ -166,7 +166,7 @@ export const HERO_SLIDES = [
     description: "A respectful environment where girls build self-belief, discipline, and self-defense skills.",
     primaryBtn: "Join with Confidence",
     secondaryBtn: "Learn More",
-    image: "https://ik.imagekit.io/BakhshuTaekwondo/hero%20section%20taewondo%20images/Gemini_Generated_Image_gvqcudgvqcudgvqc%20(1).png?updatedAt=1768225451868",
+    image: "https://ik.imagekit.io/BakhshuTaekwondo/Gemini_Generated_Image_g52yd6g52yd6g52y%20(1).png",
     aiPrompt: "A diverse group of young girls in Taekwondo uniforms, smiling confidently after training, empowerment and community theme, soft natural lighting."
   },
   {

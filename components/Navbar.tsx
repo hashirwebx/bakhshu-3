@@ -70,13 +70,13 @@ const Navbar: React.FC<NavbarProps> = ({ onRegister }) => {
       </div>
 
       {/* Bottom Bar - Dark (Hidden on mobile usually, or shown as main nav on desktop) */}
-      <div className={`bg-[#0a1018] text-white py-0 px-6 lg:px-12 border-t border-white/5 transition-transform duration-300 ${scrolled ? '-translate-y-full md:translate-y-0' : 'translate-y-0'} hidden lg:block`}>
+      <div className={`bg-[#0f1a36] text-white py-0 px-6 lg:px-12 border-t border-white/5 transition-transform duration-300 ${scrolled ? '-translate-y-full md:translate-y-0' : 'translate-y-0'} hidden lg:block`}>
         <div className="max-w-[1440px] mx-auto flex justify-between items-center h-16">
           {/* Desktop Navigation */}
           <div className="flex items-center space-x-8 xl:space-x-12 h-full">
             <button onClick={() => scrollToSection('programs')} className="nav-link h-full flex items-center border-b-2 border-transparent hover:border-primary-red hover:text-white text-gray-300 text-[13px]">Programs</button>
-            <button onClick={() => scrollToSection('about')} className="nav-link h-full flex items-center border-b-2 border-transparent hover:border-primary-red hover:text-white text-gray-300 text-[13px]">Schedule</button>
-            <button onClick={() => scrollToSection('achievements')} className="nav-link h-full flex items-center border-b-2 border-transparent hover:border-primary-red hover:text-white text-gray-300 text-[13px]">Our Instructors</button>
+            <button onClick={() => scrollToSection('about')} className="nav-link h-full flex items-center border-b-2 border-transparent hover:border-primary-red hover:text-white text-gray-300 text-[13px]">About</button>
+            <button onClick={() => scrollToSection('achievements')} className="nav-link h-full flex items-center border-b-2 border-transparent hover:border-primary-red hover:text-white text-gray-300 text-[13px]">Achievements</button>
             <button onClick={() => scrollToSection('events')} className="nav-link h-full flex items-center border-b-2 border-transparent hover:border-primary-red hover:text-white text-gray-300 text-[13px]">Events</button>
             <button onClick={() => scrollToSection('branches')} className="nav-link h-full flex items-center border-b-2 border-transparent hover:border-primary-red hover:text-white text-gray-300 text-[13px]">Locations</button>
           </div>
@@ -98,8 +98,8 @@ const Navbar: React.FC<NavbarProps> = ({ onRegister }) => {
         <div className="lg:hidden fixed top-[72px] bottom-0 left-0 right-0 bg-[#0a1018] z-[100] flex flex-col p-8 overflow-y-auto border-t border-white/10 animate-in fade-in duration-200">
           <div className="flex flex-col space-y-6 mt-4">
             <button onClick={() => scrollToSection('programs')} className="text-2xl font-bebas text-white tracking-widest text-left hover:text-primary-red border-b border-white/10 pb-4">Programs</button>
-            <button onClick={() => scrollToSection('about')} className="text-2xl font-bebas text-white tracking-widest text-left hover:text-primary-red border-b border-white/10 pb-4">Schedule</button>
-            <button onClick={() => scrollToSection('achievements')} className="text-2xl font-bebas text-white tracking-widest text-left hover:text-primary-red border-b border-white/10 pb-4">Instructors</button>
+            <button onClick={() => scrollToSection('about')} className="text-2xl font-bebas text-white tracking-widest text-left hover:text-primary-red border-b border-white/10 pb-4">About</button>
+            <button onClick={() => scrollToSection('achievements')} className="text-2xl font-bebas text-white tracking-widest text-left hover:text-primary-red border-b border-white/10 pb-4">Achievements</button>
             <button onClick={() => scrollToSection('events')} className="text-2xl font-bebas text-white tracking-widest text-left hover:text-primary-red border-b border-white/10 pb-4">Events</button>
             <button onClick={() => scrollToSection('branches')} className="text-2xl font-bebas text-white tracking-widest text-left hover:text-primary-red border-b border-white/10 pb-4">Locations</button>
             

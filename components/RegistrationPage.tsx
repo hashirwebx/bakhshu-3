@@ -134,7 +134,7 @@ I have also downloaded my official PDF form. I am attaching it to this chat now 
   };
 
   return (
-    <div className="h-screen bg-[#1C1F23] flex flex-col items-center overflow-hidden">
+    <div className="h-screen bg-white flex flex-col items-center overflow-hidden">
       <div className="fixed left-[-9999px] top-0">
         <div
           ref={pdfTemplateRef}
@@ -250,24 +250,24 @@ I have also downloaded my official PDF form. I am attaching it to this chat now 
       </div>
 
       {/* REGISTRATION PORTAL UI */}
-      <div className="w-full bg-[#1C1F23] border-b border-white/10 py-4 px-6 flex justify-between items-center sticky top-0 z-[100] shadow-sm">
+      <div className="w-full bg-white border-b border-gray-200 py-4 px-6 flex justify-between items-center sticky top-0 z-[100] shadow-sm">
         <button
           onClick={onBack}
-          className="flex items-center space-x-2 text-[10px] font-black uppercase tracking-widest text-white/60 hover:text-white transition-colors"
+          className="flex items-center space-x-2 text-[10px] font-black uppercase tracking-widest text-gray-500 hover:text-black transition-colors"
         >
           <ArrowLeft size={16} />
           <span>Back to Home</span>
         </button>
         <div className="flex items-center space-x-2">
-          <img src="https://ik.imagekit.io/BakhshuTaekwondo/logo.jpeg?updatedAt=1768482725879" alt="Logo" className="w-8 h-8 bg-white rounded-full" />
-          <span className="font-bebas text-lg tracking-widest uppercase text-white">Admission Portal</span>
+          <img src="https://ik.imagekit.io/BakhshuTaekwondo/logo.jpeg?updatedAt=1768482725879" alt="Logo" className="w-8 h-8 bg-white rounded-full border border-gray-100" />
+          <span className="font-bebas text-lg tracking-widest uppercase text-black">Admission Portal</span>
         </div>
         <div className="w-24"></div>
       </div>
 
       <div className="w-full max-w-[1000px] p-6 md:p-8 lg:p-12 flex-1 overflow-y-auto">
         {step === 'form' ? (
-          <div className="bg-[#1C1F23] p-6 md:p-8 shadow-2xl border-t-[12px] border-white/20 animate-in fade-in slide-in-from-bottom-6 duration-700 text-white">
+          <div className="bg-white p-6 md:p-8 shadow-2xl border-t-[12px] border-primary-red/10 animate-in fade-in slide-in-from-bottom-6 duration-700 text-black border border-gray-200">
             <div className="flex flex-col md:flex-row justify-between items-start border-b-2 border-black pb-12 mb-16 relative">
               <div className="flex items-center space-x-6 mb-8 md:mb-0">
                 <img
@@ -348,7 +348,7 @@ I have also downloaded my official PDF form. I am attaching it to this chat now 
                   { label: "Mobile Number", name: "phone", placeholder: "03XX-XXXXXXX", required: true },
                 ].map((field) => (
                   <div key={field.name} className="flex flex-col space-y-2">
-                    <label className="text-[10px] font-black uppercase tracking-[0.2em] flex items-center text-white/80">
+                    <label className="text-[10px] font-black uppercase tracking-[0.2em] flex items-center text-black/60">
                       {field.label} {field.required && <span className="text-red-600 ml-1">*</span>}
                     </label>
                     <div className="relative">
@@ -356,7 +356,7 @@ I have also downloaded my official PDF form. I am attaching it to this chat now 
                         <select
                           name={field.name}
                           onChange={handleChange}
-                          className="w-full border-b border-black/20 py-3 focus:border-black outline-none transition-colors bg-black text-base font-bold appearance-none rounded-none"
+                          className="w-full border-b border-black/20 py-3 focus:border-black outline-none transition-colors bg-white text-black text-base font-bold appearance-none rounded-none"
                         >
                           <option value="">Select Option</option>
                           {field.options?.map(opt => <option key={opt} value={opt}>{opt}</option>)}
@@ -368,7 +368,7 @@ I have also downloaded my official PDF form. I am attaching it to this chat now 
                           required={field.required}
                           onChange={handleChange}
                           placeholder={field.placeholder}
-                          className="w-full border-b border-black/20 py-3 focus:border-black outline-none transition-colors bg-transparent text-base font-bold placeholder:opacity-20 rounded-none"
+                          className="w-full border-b border-black/20 py-3 focus:border-black outline-none transition-colors bg-transparent text-black text-base font-bold placeholder:opacity-40 rounded-none"
                         />
                       )}
                     </div>
@@ -376,43 +376,43 @@ I have also downloaded my official PDF form. I am attaching it to this chat now 
                 ))}
 
                 <div className="flex flex-col space-y-2">
-                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-white/80">Preferred Branch</label>
-                  <select name="branch" value={formData.branch} onChange={handleChange} className="w-full border-b border-black/20 py-3 focus:border-black outline-none bg-black text-base font-bold rounded-none">
+                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-black/60">Preferred Branch</label>
+                  <select name="branch" value={formData.branch} onChange={handleChange} className="w-full border-b border-black/20 py-3 focus:border-black outline-none bg-white text-base font-bold text-black rounded-none">
                     <option value="soan">Soan Garden (Islamabad)</option>
                     <option value="pindi">Haidri Chowk (Rawalpindi)</option>
                   </select>
                 </div>
                 <div className="flex flex-col space-y-2">
-                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-white/80">Available Slot</label>
-                  <select name="slot" value={formData.slot} onChange={handleChange} className="w-full border-b border-black/20 py-3 focus:border-black outline-none bg-transparent text-base font-bold rounded-none">
+                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-black/60">Available Slot</label>
+                  <select name="slot" value={formData.slot} onChange={handleChange} className="w-full border-b border-black/20 py-3 focus:border-black outline-none bg-transparent text-base font-bold text-black rounded-none">
                     {BRANCHES[formData.branch].slots.map(s => <option key={s} value={s}>{s}</option>)}
                   </select>
                 </div>
               </div>
 
               <div className="flex flex-col space-y-2 pt-6">
-                <label className="text-[10px] font-black uppercase tracking-[0.2em] text-white/80">Postal Address</label>
+                <label className="text-[10px] font-black uppercase tracking-[0.2em] text-black/60">Postal Address</label>
                 <textarea
                   name="address"
                   onChange={handleChange}
                   rows={3}
-                  className="w-full border-b border-black/20 py-3 focus:border-black outline-none transition-colors bg-transparent text-base font-bold placeholder:opacity-20 resize-none rounded-none"
+                  className="w-full border-b border-black/20 py-3 focus:border-black outline-none transition-colors bg-transparent text-base font-bold text-black placeholder:opacity-40 resize-none rounded-none"
                   placeholder="Street, House No, Sector/Block, City"
                 ></textarea>
               </div>
 
-              <div className="mt-20 p-10 border-2 border-white/20 bg-[#1C1F23] relative overflow-hidden">
+              <div className="mt-20 p-10 border-2 border-black/10 bg-gray-50 relative overflow-hidden">
                 <div className="absolute top-0 right-0 p-4 opacity-[0.05]">
                   <img src="https://ik.imagekit.io/BakhshuTaekwondo/bakhshu?updatedAt=1767881121835" className="w-40" alt="Watermark" />
                 </div>
-                <h3 className="text-2xl font-black uppercase tracking-[0.2em] border-b border-white/20 pb-4 mb-8 text-center italic text-white">TAEKWONDO STUDENT OATH</h3>
-                <ul className="space-y-4 text-[11px] font-bold leading-relaxed uppercase tracking-wide text-white">
+                <h3 className="text-2xl font-black uppercase tracking-[0.2em] border-b border-black/10 pb-4 mb-8 text-center italic text-black">TAEKWONDO STUDENT OATH</h3>
+                <ul className="space-y-4 text-[11px] font-bold leading-relaxed uppercase tracking-wide text-black">
                   <li className="flex items-start"><span className="mr-3 mt-1">•</span> I know what Taekwondo represents, and I will listen and obey my Parents, Teachers, Master and Instructors.</li>
                   <li className="flex items-start"><span className="mr-3 mt-1">•</span> I will demonstrate my Taekwondo discipline in the dojang, my school, and most importantly at home.</li>
                   <li className="flex items-start"><span className="mr-3 mt-1">•</span> I will only use my Taekwondo ability to defend myself, never in an aggressive manner.</li>
                   <li className="flex items-start"><span className="mr-3 mt-1">•</span> I will respect myself, my family, my school and my country.</li>
                   <li className="flex items-start"><span className="mr-3 mt-1">•</span> I will always try my best in everything I do, including Taekwondo, School Studies and everything else.</li>
-                  <li className="italic text-primary-blue bg-primary-blue/5 p-4 mt-6 border-l-4 border-primary-blue text-white">
+                  <li className="italic text-primary-blue bg-primary-blue/5 p-4 mt-6 border-l-4 border-primary-blue text-black/80">
                     * Children who do not obey their parents <span className="font-black underline uppercase italic">CHEERFULLY</span> may be reduced in Rank.
                   </li>
                 </ul>
@@ -462,13 +462,13 @@ I have also downloaded my official PDF form. I am attaching it to this chat now 
             </form>
           </div>
         ) : (
-          <div className="bg-[#1C1F23] p-12 md:p-20 text-center shadow-2xl border-t-[12px] border-white/20 animate-in zoom-in duration-500 max-w-2xl mx-auto text-white">
-            <div className="w-28 h-28 bg-black text-white rounded-full flex items-center justify-center mx-auto mb-10 shadow-xl">
+          <div className="bg-white p-12 md:p-20 text-center shadow-2xl border-t-[12px] border-primary-red border border-gray-200 animate-in zoom-in duration-500 max-w-2xl mx-auto text-black">
+            <div className="w-28 h-28 bg-primary-red text-white rounded-full flex items-center justify-center mx-auto mb-10 shadow-xl">
               <CheckCircle size={64} />
             </div>
-            <h2 className="text-6xl font-bebas mb-6 leading-none text-white">Registration Successful</h2>
-            <p className="text-slate-500 mb-12 text-xl font-serif italic leading-relaxed">
-              Assalam o Alaikum <span className="text-white font-bold">{formData.fullName}</span>! Your admission request for the <span className="text-white font-bold uppercase tracking-widest">{BRANCHES[formData.branch].name}</span> has been digitally filed.
+            <h2 className="text-6xl font-bebas mb-6 leading-none text-black">Registration Successful</h2>
+            <p className="text-gray-500 mb-12 text-xl font-serif italic leading-relaxed">
+              Assalam o Alaikum <span className="text-black font-bold">{formData.fullName}</span>! Your admission request for the <span className="text-black font-bold uppercase tracking-widest">{BRANCHES[formData.branch].name}</span> has been digitally filed.
             </p>
 
             <div className="flex flex-col gap-4">

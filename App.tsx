@@ -6,6 +6,7 @@ import About from './components/About';
 import WhyChooseUs from './components/WhyChooseUs';
 import Benefits from './components/Benefits';
 import WhyParentsSection from './components/WhyParentsSection';
+import ParentsReviews from './components/ParentsReviews';
 import GirlsTraining from './components/GirlsTraining';
 import Programs from './components/Programs';
 import Branches from './components/Branches';
@@ -33,7 +34,7 @@ const App: React.FC = () => {
     window.scrollTo(0, 0);
 
     let lenis: any;
-    
+
     if (view === 'home') {
       lenis = new Lenis({
         duration: 1.4,
@@ -90,7 +91,7 @@ const App: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar onRegister={() => handleEnrollClick('soan')} />
-      
+
       <main className="overflow-hidden">
         <Hero onRegister={() => handleEnrollClick('soan')} />
         <WhyChooseUs />
@@ -99,6 +100,7 @@ const App: React.FC = () => {
         <Benefits />
         <Events onRegister={() => handleEnrollClick('soan')} />
         <WhyParentsSection />
+          <ParentsReviews />
         <GirlsTraining />
         <Programs />
         <Branches onRegister={handleEnrollClick} />
@@ -109,8 +111,8 @@ const App: React.FC = () => {
 
       <Footer />
 
-      <ConfirmIntentModal 
-        isOpen={isConfirmModalOpen} 
+      <ConfirmIntentModal
+        isOpen={isConfirmModalOpen}
         onClose={() => setIsConfirmModalOpen(false)}
         onConfirm={confirmEnrollment}
       />

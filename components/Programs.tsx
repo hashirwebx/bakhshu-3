@@ -14,7 +14,7 @@ const Programs: React.FC = () => {
     // Register ScrollTrigger within the component to be safe
     if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
       gsap.registerPlugin(ScrollTrigger);
-      
+
       const ctx = gsap.context(() => {
         if (cardsRef.current) {
           gsap.from(cardsRef.current.children, {
@@ -58,13 +58,13 @@ const Programs: React.FC = () => {
               style={{ opacity: 1 }} // Safety fallback for visibility
             >
               <div className="aspect-[4/5] relative overflow-hidden">
-                <img 
-                  src={cat.img} 
-                  className="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:scale-110 group-hover:grayscale-0 opacity-40 group-hover:opacity-80 rounded-none" 
-                  alt={cat.title} 
+                <img
+                  src={cat.img}
+                  className="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:scale-110 group-hover:grayscale-0 opacity-40 group-hover:opacity-80 rounded-none"
+                  alt={cat.title}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
-                
+
                 <div className="absolute bottom-10 left-10 right-10 z-20">
                   <span className="text-primary-red font-black text-[10px] uppercase tracking-[0.3em] block mb-3">{cat.age}</span>
                   <h4 className="text-white font-bold text-3xl tracking-tight leading-none mb-4">{cat.title}</h4>
