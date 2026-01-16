@@ -45,7 +45,7 @@ const Navbar: React.FC<NavbarProps> = ({ onRegister }) => {
             />
             <div className="flex flex-col items-start leading-none">
               <span className="font-bebas text-xl md:text-2xl tracking-widest text-primary-black">Bakhshu Taekwondo</span>
-              <span className="text-[10px] font-bold tracking-[0.2em] text-primary-red uppercase">& Fitness Club</span>
+              <span className="text-[10px] font-bold tracking-[0.2em] text-primary-red uppercase">& Martial Arts</span>
             </div>
           </button>
 
@@ -87,7 +87,7 @@ const Navbar: React.FC<NavbarProps> = ({ onRegister }) => {
               onClick={onRegister}
               className="bg-primary-red hover:bg-[#d62020] text-white px-8 py-6 h-16 text-[12px] font-black uppercase tracking-[0.15em] transition-all flex items-center justify-center skew-x-0 hover:skew-x-2"
             >
-              Start Trial
+              Join Us
             </button>
           </div>
         </div>

@@ -189,11 +189,9 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
                 alt="Elite Combat Training"
                 className="slide-bg w-full h-full object-cover transition-all duration-1000 scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
             </div>
 
-            <div className="relative z-20 w-full max-w-[1440px] mx-auto flex flex-col items-start pb-10">
-
+            <div className="relative z-20 w-full max-w-[1440px] mx-auto flex flex-col items-start">
               <div className="reveal-item w-full max-w-3xl">
                 <div className="inline-flex items-center space-x-3 bg-white/5 backdrop-blur-md border border-white/10 px-4 py-2 mb-8">
                   <img src="https://ik.imagekit.io/BakhshuTaekwondo/logo.jpeg" className="w-6 h-6 rounded-full" />
@@ -201,11 +199,11 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
                   <span className="text-[10px] text-white/80 font-black uppercase tracking-[0.3em]">Excellence Since 2010</span>
                 </div>
 
-                <h1 className="text-4xl md:text-6xl lg:text-[5rem] font-extrabold text-white leading-[0.9] tracking-tighter uppercase font-inter [text-shadow:0_4px_30px_rgba(0,0,0,0.5)] mb-6 text-left">
+                <h1 className="text-4xl md:text-5xl lg:text-[4.1rem] font-extrabold text-white leading-[0.9] tracking-tighter uppercase font-inter [text-shadow:0_4px_30px_rgba(0,0,0,0.5)] mb-6 text-left">
                   {slide.headline}
                 </h1>
 
-                <p className="text-xl md:text-2xl lg:text-3xl font-black text-primary-red tracking-tight uppercase font-inter italic [text-shadow:0_2px_10px_rgba(0,0,0,0.3)] mb-8 text-left">
+                <p className="text-lg md:text-xl lg:text-2xl font-black text-primary-red tracking-tight uppercase font-inter italic [text-shadow:0_2px_10px_rgba(0,0,0,0.3)] mb-8 text-left">
                   {slide.subHeadline}
                 </p>
 
