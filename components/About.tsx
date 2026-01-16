@@ -60,7 +60,7 @@ const About: React.FC = () => {
           <div className="about-img relative">
             <div className="relative z-10 bg-card-dark p-2 rounded-none overflow-hidden shadow-2xl">
               <img
-                src="https://scontent.fxjm2-1.fna.fbcdn.net/v/t1.6435-9/42840781_2131175610235729_7548524405630959616_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8Fypx8XrGvIQ7kNvwG2rRnf&_nc_oc=AdmYxz7fIxbw4WFk0MgoZg7LSkbo4P6jiT-SynWWA6UHQZfj5q6SkOvqwz0wS82QkVY&_nc_zt=23&_nc_ht=scontent.fxjm2-1.fna&_nc_gid=q2QANUgVLaG1jpMAsU3y2w&oh=00_Afp9nS9pNPBDC5DCIbYV2QO90CcRN7GjPdvm1symXBdExA&oe=698D7C51" 
+                src="https://scontent.fmfg1-1.fna.fbcdn.net/v/t39.30808-6/482238520_9793777673975446_9077913270090878022_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=kAC93HQB3hUQ7kNvwEkVif4&_nc_oc=Adk-K2BUIudHs-sRlupM-egfSK1Cs15Xq1HEwOVbucgeeo5OzIxvvI2PjLSBl5-Wgrs&_nc_zt=23&_nc_ht=scontent.fmfg1-1.fna&_nc_gid=AwemgLmEzLwLqL7cYI8-_g&oh=00_Afp49hAo-EIKNyQcZtTLTrna7NsXXxhUN1vgANIwM9kYnQ&oe=69700CC2" 
                 alt="Master Basharat"
                 className="w-full h-full  grayscale brightness-75 hover:grayscale-0 transition-all duration-700 rounded-none"
               />
@@ -70,7 +70,7 @@ const About: React.FC = () => {
 
           <div className="about-text space-y-8">
             <h2 className="text-5xl md:text-7xl font-bold text-white leading-[1] tracking-tight">
-              LED BY NATIONAL-LEVEL <span className="text-primary-red">EXPERIENCE</span>
+              LED BY INTERNATIONAL LEVEL <span className="text-primary-red">EXPERIENCE</span>
             </h2>
             
             <p className="text-text-gray text-lg leading-relaxed font-medium">

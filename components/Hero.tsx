@@ -193,10 +193,15 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
 
             <div className="relative z-20 w-full max-w-[1440px] mx-auto flex flex-col items-start">
               <div className="reveal-item w-full max-w-3xl">
-                <div className="inline-flex items-center space-x-3 bg-white/5 backdrop-blur-md border border-white/10 px-4 py-2 mb-8">
-                  <img src="https://ik.imagekit.io/BakhshuTaekwondo/logo.jpeg" className="w-6 h-6 rounded-full" />
-                  <div className="h-4 w-[1px] bg-white/20"></div>
-                  <span className="text-[10px] text-white/80 font-black uppercase tracking-[0.3em]">Excellence Since 2010</span>
+                <div className="reveal-item flex items-center space-x-6 mb-8">
+                  <div className="p-1 border border-white/10 rounded-full bg-black/20 backdrop-blur-sm">
+                    <img src="https://ik.imagekit.io/BakhshuTaekwondo/logo.jpeg" className="w-12 h-12 md:w-14 md:h-14 rounded-full" alt="Bakhshu Logo" />
+                  </div>
+
+                  <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-white/10 to-transparent border-l border-white/20 px-6 py-3 backdrop-blur-md h-full min-h-[50px]">
+                    <div className="h-6 w-[1px] bg-white/40"></div>
+                    <span className="text-[11px] md:text-xs text-white font-black uppercase tracking-[0.3em]">Excellence Since 2010</span>
+                  </div>
                 </div>
 
                 <h1 className="text-4xl md:text-5xl lg:text-[4.1rem] font-extrabold text-white leading-[0.9] tracking-tighter uppercase font-inter [text-shadow:0_4px_30px_rgba(0,0,0,0.5)] mb-6 text-left">
