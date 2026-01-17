@@ -45,12 +45,12 @@ export const Achievements: React.FC<AchievementsProps> = ({ onRegister }) => {
     }, []);
 
     return (
-        <section id="achievements" ref={sectionRef} className="py-32 bg-white border-t border-gray-200 relative overflow-hidden">
+        <section id="achievements" ref={sectionRef} className="py-32 bg-[#0f1a36] border-t border-gray-200 relative overflow-hidden">
             {/* Decorative Brand Watermark - Keeping as requested */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden opacity-[0.03]">
                 <img
                     ref={logoRef}
-                    src="https://ik.imagekit.io/BakhshuTaekwondo/bakhshu?updatedAt=1767881121835"
+                    src="https://ik.imagekit.io/BakhshuTaekwondo/logo.jpeg?updatedAt=1768482725879"
                     alt="Watermark"
                     className="w-[1200px] h-[1200px] grayscale brightness-0 invert"
                 />
@@ -70,12 +70,10 @@ export const Achievements: React.FC<AchievementsProps> = ({ onRegister }) => {
 
                 <div className="ach-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {ACHIEVEMENTS.map((ach: any, idx) => (
-                        <div key={idx} className="ach-card bg-white border border-gray-200 shadow-md group hover:border-primary-red/50 transition-all duration-700 relative overflow-hidden flex flex-col min-h-[400px]">
-
-                            {/* Cinematic Image Layer - Now Static and Premium */}
+                        <div key={idx} className="ach-card bg-[#0f1a36] border border-gray-200 shadow-md group hover:border-primary-red/50 transition-all duration-700 relative overflow-hidden flex flex-col min-h-[400px]">
                             <div className="absolute inset-0 z-0">
                                 <img src={ach.image} className="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-110 grayscale brightness-110 group-hover:grayscale-0 group-hover:brightness-100 opacity-20 group-hover:opacity-100" alt={ach.title} />
-                                <div className="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-transparent group-hover:from-black/80 group-hover:via-black/40 group-hover:to-transparent transition-all duration-700"></div>
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#0f1a36] via-white/80 to-transparent group-hover:from-black/80 group-hover:via-black/40 group-hover:to-transparent transition-all duration-700"></div>
                             </div>
 
                             <div className="p-10 flex flex-col justify-between flex-1 relative z-10">

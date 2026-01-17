@@ -55,7 +55,6 @@ const ParentsReviews: React.FC = () => {
 
     return (
         <section ref={sectionRef} className="py-24 bg-white border-t border-gray-200 relative overflow-hidden">
-            {/* Background Decorative Elements */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-primary-red/5 rounded-full blur-[100px] -z-10"></div>
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/5 rounded-full blur-[100px] -z-10"></div>
 

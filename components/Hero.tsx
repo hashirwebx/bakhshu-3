@@ -194,8 +194,8 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
             <div className="relative z-20 w-full max-w-[1440px] mx-auto flex flex-col items-start">
               <div className="reveal-item w-full max-w-3xl">
                 <div className="reveal-item flex items-center space-x-6 mb-8">
-                  <div className="p-1 border border-white/10 rounded-full bg-black/20 backdrop-blur-sm">
-                    <img src="https://ik.imagekit.io/BakhshuTaekwondo/logo.jpeg" className="w-12 h-12 md:w-14 md:h-14 rounded-full" alt="Bakhshu Logo" />
+                  <div className="p-1 rounded-full border border-white/20 backdrop-blur-sm">
+                    <img src="https://ik.imagekit.io/BakhshuTaekwondo/logo.jpeg" className="w-12 h-12 md:w-14 md:h-14 bg-white rounded-full" alt="Bakhshu Logo" />
                   </div>
 
                   <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-white/10 to-transparent border-l border-white/20 px-6 py-3 backdrop-blur-md h-full min-h-[50px]">

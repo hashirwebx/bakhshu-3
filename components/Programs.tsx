@@ -38,7 +38,7 @@ const Programs: React.FC = () => {
   }, []);
 
   return (
-    <section id="programs" ref={sectionRef} className="bg-primary-black py-32 px-6 border-t border-white/5">
+    <section id="programs" ref={sectionRef} className="bg-[#0f1a36] py-32 px-6 border-t border-white/5">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-24">
           <span className="text-primary-red font-black uppercase tracking-[0.4em] mb-4 block text-[10px]">From Beginners to Future Champions</span>
