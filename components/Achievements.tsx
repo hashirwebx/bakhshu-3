@@ -63,7 +63,7 @@ export const Achievements: React.FC<AchievementsProps> = ({ onRegister }) => {
                     <h2 className="text-6xl md:text-[10rem] font-bebas text-black/[0.02] absolute top-0 left-0 select-none tracking-tighter uppercase leading-none pointer-events-none -translate-y-1/4">LEGACY</h2>
 
                     <div className="relative z-10">
-                        <h3 className="text-4xl md:text-7xl font-bebas text-black tracking-widest uppercase leading-none">OUR <span className="text-primary-red">ACHIEVEMENTS</span></h3>
+                        <h3 className="text-4xl md:text-7xl font-bebas text-white tracking-widest uppercase leading-none">OUR <span className="text-primary-red">ACHIEVEMENTS</span></h3>
                         <div className="w-24 h-1 bg-primary-red mt-6"></div>
                     </div>
                 </div>

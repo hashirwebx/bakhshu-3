@@ -17,8 +17,8 @@ const FEATURES = [
     icon: <Heart size={32} />
   },
   {
-    title: "Taekwondo Training",
-    desc: "Learn martial arts from professional national-level fighters with authentic combat sports training programs.",
+    title: "Professional Taekwondo Training",
+    desc: "Structured Program for kids, ⁠Empowering young girls, Safe and Supportive Training",
     icon: <Zap size={32} />
   },
   {
