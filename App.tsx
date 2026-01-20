@@ -19,7 +19,6 @@ import Footer from './components/Footer';
 import RegistrationPage from './components/RegistrationPage';
 import ConfirmIntentModal from './components/ConfirmIntentModal';
 import { Branch } from './types';
-import Preloader from './components/Pre-loading';
 import MeetOurTeam from './components/MeetOurTeam';
 
 declare const Lenis: any;
@@ -94,8 +93,8 @@ const App: React.FC = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* PROFESSIONAL PRELOADER */}
-      {isAppLoading && <Preloader onComplete={() => setIsAppLoading(false)} />}
+      {/* PROFESSIONAL PRELOADER
+      {isAppLoading && <Preloader onComplete={() => setIsAppLoading(false)} />} */}
       <Navbar onRegister={() => handleEnrollClick('soan')} />
 
       <main className="overflow-hidden">
