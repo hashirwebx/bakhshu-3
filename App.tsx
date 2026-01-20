@@ -13,7 +13,7 @@ import Branches from './components/Branches';
 import SpecialAlert from './components/SpecialAlert';
 import Gallery from './components/Gallery';
 import { Achievements } from './components/Achievements';
-// import { Events } from './components/Events';
+import { Events } from './components/Events';
 import LocationMap from './components/LocationMap';
 import Footer from './components/Footer';
 import RegistrationPage from './components/RegistrationPage';
@@ -27,7 +27,7 @@ declare const gsap: any;
 declare const ScrollTrigger: any;
 
 const App: React.FC = () => {
-    const [isAppLoading, setIsAppLoading] = useState(true);
+  const [isAppLoading, setIsAppLoading] = useState(true);
 
   const [view, setView] = useState<'home' | 'register'>('home');
   const [selectedBranch, setSelectedBranch] = useState<Branch>('soan');
@@ -104,12 +104,12 @@ const App: React.FC = () => {
         <About />
         <Achievements onRegister={() => handleEnrollClick('soan')} />
         <Benefits />
-        {/* <Events onRegister={() => handleEnrollClick('soan')} /> */}
         <MeetOurTeam onRegister={() => handleEnrollClick('soan')} />
+        <Events onRegister={() => handleEnrollClick('soan')} />
         <WhyParentsSection />
         <ParentsReviews />
         <GirlsTraining />
-        <Programs />  
+        <Programs />
         <Branches onRegister={handleEnrollClick} />
         <SpecialAlert onBook={() => handleEnrollClick('soan')} />
         <Gallery />

@@ -117,7 +117,7 @@ const Instructors: React.FC = () => {
                                 <h4 className="text-white text-xl font-black uppercase tracking-tight">Interested in joining our team?</h4>
                                 <p className="text-white/40 text-[10px] font-black uppercase tracking-widest mt-1">We are always looking for passionate martial artists.</p>
                             </div>
-                            <button className="red-button px-12 py-5 text-[11px]">Contact Us</button>
+                            <button onClick={() => window.open('https://wa.me/923350990834?text=Assalam-o-Alaikum.%20I%20hope%20you%20are%20doing%20well.%20I%20am%20interested%20in%20joining%20Bakhshu%20Taekwondo%20and%20would%20like%20to%20get%20more%20details%20regarding%20training%20schedules,%20fees,%20and%20the%20registration%20process.%20Thank%20you.', '_blank')} className="red-button px-12 py-5 text-[11px]">Contact Us</button>
                         </div>
                     </div>
                 </div>
